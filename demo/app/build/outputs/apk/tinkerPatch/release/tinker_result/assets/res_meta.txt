@@ -1,0 +1,12 @@
+resources_out.zip,2320175833,564ec8e13746bfd6906255ae49769456
+pattern:3
+resources.arsc
+res/*
+assets/*
+large modify:1
+resources.arsc,564ec8e13746bfd6906255ae49769456,3148062324
+modify:2
+res/layout/adapter_comment.xml
+res/layout/layout_adapter_cache.xml
+add:1
+assets/only_use_to_test_tinker_resource.txt

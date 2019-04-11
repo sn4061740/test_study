@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentLayout"
+        android:layout_marginTop="@dimen/_5"
+        android:background="@color/black_1A"
+        android:orientation="vertical">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35"
+        android:text="相关影片："
+        android:textColor="@color/title_color"
+        android:gravity="bottom"
+        android:textSize="@dimen/_15"
+        android:paddingLeft="@dimen/_10"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.xcore.ui.other.XRecyclerView
+                android:id="@+id/related_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5"
+                android:background="@color/black_1A"
+                >
+            </com.xcore.ui.other.XRecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

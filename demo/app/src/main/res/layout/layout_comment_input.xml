@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/black_1A"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/commentInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="@dimen/_5"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/comment_edit11"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40dp"
+                android:hint="留下评论再走吧~"
+                android:textSize="@dimen/_14sp"
+                android:textColor="@color/color_9c9c9c"
+                android:textColorHint="@color/color_9c9c9c"
+                android:background="@color/color_black"
+                android:layout_marginRight="@dimen/_5"
+                android:paddingLeft="@dimen/_10"
+                />
+
+            <Button
+                android:id="@+id/btn_send11"
+                android:layout_width="60dp"
+                android:layout_height="38dp"
+                android:background="@color/title_color"
+                android:text="评 论" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_30dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--&gt;-->
+
+            <!--<TextView-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="发评论"-->
+                <!--android:paddingLeft="@dimen/_5"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:textColor="@color/color_white"-->
+                <!--/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/txt_back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="ˇ"-->
+                <!--android:textSize="30dp"-->
+                <!--android:paddingRight="@dimen/_10"-->
+                <!--android:textColor="@color/black_1A"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+        <!--<EditText-->
+            <!--android:id="@+id/comment_edit"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:text=""-->
+            <!--android:hint="我来话两句"-->
+            <!--android:textColorHint="@color/color_white"-->
+            <!--android:textColor="@color/color_white"-->
+            <!--android:background="@color/color_9c9c9c"-->
+            <!--android:layout_margin="@dimen/_5"-->
+            <!--android:padding="@dimen/_5"-->
+            <!--android:textSize="12dp"-->
+            <!--android:gravity="top"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--android:maxLength="50"-->
+            <!--android:focusable="true"-->
+            <!--/>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingLeft="@dimen/_5"-->
+            <!--android:paddingRight="@dimen/_5"-->
+            <!--android:paddingTop="@dimen/_5"-->
+            <!--&gt;-->
+            <!--<TextView-->
+                <!--android:id="@+id/txt_leng"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="0/50"-->
+                <!--android:textColor="@color/color_9c9c9c"-->
+                <!--/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_send"-->
+                <!--android:layout_width="65dp"-->
+                <!--android:layout_height="@dimen/_30"-->
+                <!--android:text="发送"-->
+                <!--android:textSize="12dp"-->
+                <!--android:textColor="@color/color_white"-->
+                <!--android:background="@drawable/button_comment"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+</ScrollView>

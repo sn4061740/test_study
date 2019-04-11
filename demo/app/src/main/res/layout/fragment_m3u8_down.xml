@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black"
+    >
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:background="@color/black_1A"
+            >
+
+            <LinearLayout
+                android:id="@+id/rootLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/_10"
+                android:paddingRight="@dimen/_10"
+                >
+                <LinearLayout
+                    android:id="@+id/down_status"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    >
+                    <ImageView
+                        android:id="@+id/pauseImage"
+                        android:layout_width="@dimen/_20"
+                        android:layout_height="@dimen/_20"
+                        android:src="@drawable/pause"
+                        android:layout_marginRight="@dimen/_5"
+                        android:onClick="onPauseAll"
+                        />
+                    <TextView
+                        android:id="@+id/pauseTxt"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="全部暂停"
+                        android:textColor="@color/title_color"
+                        android:onClick="onPauseAll"
+                        />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前缓存个数:3"
+                    android:textColor="@color/title_color"
+                    android:gravity="center"
+                    android:background="@drawable/tag_feedback_tiwen"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:paddingRight="@dimen/_10"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:textSize="12dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.xcore.sliderRecyclerView.SlideRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_1dp"
+            >
+        </com.xcore.sliderRecyclerView.SlideRecyclerView>
+
+    </LinearLayout>
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/emptyLayout"
+        layout="@layout/empty_layout"
+        android:visibility="gone" />
+</FrameLayout>

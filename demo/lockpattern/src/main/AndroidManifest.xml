@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.com.lockpattern">
+
+    <application>
+        <activity android:name=".widget.LockPatternActivity"></activity>
+        <activity android:name=".widget.SetLockPatternActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name=".widget.OpenLockPatternActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+    </application>
+
+</manifest>

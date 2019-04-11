@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xcore">
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" /> <!-- 推荐的权限 -->
+    <!-- 添加如下权限，以便使用更多的第三方SDK和更精准的统计数据 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- android:required=true 必须有相机功能程序才可以运行 largeHeap=true,开启大内存 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.ActiveCodeActivity"></activity>
+        <!-- <meta-data android:value="5ba468bfb465f54b5d00016b" android:name="UMENG_APPKEY"/> -->
+        <!-- <meta-data android:value="Umeng" android:name="UMENG_CHANNEL"/> -->
+        <service
+            android:name=".tinker.TinkerService"
+            android:exported="false" /> <!-- FileProvider共享文件、缓存 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xcore.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".RunActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- 需要添加下面的intent-filter配置 网页启动跳转 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.qxtv6.com"
+                    android:path="/qx"
+                    android:scheme="qx" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".P2PTransActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PermissionsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TagActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SpreadShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.NoticeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FeedbackRecodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ThemeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BoxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LastUpdatedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MyShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ProtocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TypeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.FindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.XMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TagSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.UpgradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.HRecodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CollectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ThemeListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AppUpdateActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name=".ui.activity.NoticeTipsPopupActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name=".ui.activity.UpdateUserHeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MakeLTDActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.NvStarListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CuestomerCaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.GifFindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PVideoViewActivity1202"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.activity.PVideoViewActivity88"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.activity.StarDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".ui.activity.OpenScreenAdvActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Anim_fade" />
+        <activity
+            android:name=".down.M3u8CacheActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.otheractivity.AActivity" />
+        <activity android:name=".ui.otheractivity.BActivity" />
+        <activity android:name=".ui.otheractivity.CActivity" />
+        <activity android:name=".ui.otheractivity.DActivity" />
+        <activity android:name=".ui.otheractivity.EActivity" />
+        <activity android:name=".ui.otheractivity.FActivity" />
+        <activity android:name=".ui.otheractivity.TWebActivity" />
+        <activity android:name=".ui.activity.RecodeActivity" />
+    </application>
+
+</manifest>

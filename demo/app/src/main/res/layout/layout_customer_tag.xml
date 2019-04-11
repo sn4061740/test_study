@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:gravity="center_horizontal|center_vertical"
+    >
+    <TextView
+        android:id="@+id/tag_name"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:text="一道本"
+        android:gravity="center"
+        android:textSize="11dp"
+        android:background="@drawable/tag_selected"
+        android:textColor="@color/title_color"
+        />
+    <LinearLayout
+        android:id="@+id/selectLayout"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:orientation="vertical"
+        android:gravity="bottom|right"
+        >
+        <ImageView
+            android:layout_width="@dimen/_10"
+            android:layout_height="@dimen/_10"
+            android:src="@drawable/gou"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="4dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

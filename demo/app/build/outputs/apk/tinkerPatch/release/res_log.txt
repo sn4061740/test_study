@@ -1,0 +1,5 @@
+modify resource: res/layout/adapter_comment.xml, oldSize=3828, newSize=3828
+modify resource: res/layout/layout_adapter_cache.xml, oldSize=3044, newSize=3044
+large modify resource: resources.arsc, oldSize=393956, newSize=393996
+add test resource: assets/only_use_to_test_tinker_resource.txt, oldSize=0, newSize=24
+Final normal zip resource: resources_out.zip, size=5396436, md5=75bf994b5acf21e8799928c479630417

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <!--android:background="@color/title_color"-->
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:AutoPlayTime="5000"
+        app:isAutoPlay="false"
+        app:isClipChildrenMode="true"
+        app:isHandLoop="true"
+        app:isShowIndicatorOnlyOne="false"
+        app:isShowNumberIndicator="false"
+        app:isShowTips="true"
+        app:pointContainerPosition="BOTTOM"
+        app:pageChangeDuration="1000"
+        app:bannerBottomMargin="@dimen/_0dp"
+        app:pointContainerLeftRightPadding="@dimen/_0dp"
+        app:clipChildrenTopBottomMargin="-4dp"
+        app:pointTopBottomPadding="@dimen/_0dp"
+        app:placeholderDrawable="@drawable/network_load"
+        app:pointsVisibility="true"
+        app:viewpagerMargin="10dp"
+        app:pointsContainerBackground="@color/color_translucent"
+        app:pointsPosition="CENTER"
+        app:clipChildrenLeftRightMargin="25dp"
+        app:pointSelect="@drawable/point_yes"
+        app:pointNormal="@drawable/point_no"
+        />
+
+    <!--<com.zhouwei.mzbanner.MZBannerView-->
+        <!--android:id="@+id/mz_banner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--app:open_mz_mode="false"-->
+    <!--app:canLoop="true"-->
+        <!--app:middle_page_cover="false"-->
+        <!--app:indicatorAlign="right"-->
+        <!--/>-->
+
+</LinearLayout>

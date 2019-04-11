@@ -1,0 +1,7 @@
+#base package config field
+#Wed Mar 20 12:35:04 CST 2019
+platform=all
+NEW_TINKER_ID=tinker_id_com.xcode_1.4.0
+TINKER_ID=tinker_id_com.xcode_1.4.0
+patchMessage=tinker is sample to use
+patchVersion=1.0

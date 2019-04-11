@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/_5"
+    >
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        >
+
+        <com.xcore.ext.ImageViewExt
+            android:id="@+id/conver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/network_load"
+            android:scaleType="fitCenter"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red_color"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_10"
+        >
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25"
+            android:text="fsdafsadfsadf"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            />
+        <com.nex3z.flowlayout.FlowLayout
+            android:id="@+id/flowLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        </com.nex3z.flowlayout.FlowLayout>
+        <TextView
+            android:id="@+id/playCountTxt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25"
+            android:text="120万次播放"
+            android:gravity="bottom"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

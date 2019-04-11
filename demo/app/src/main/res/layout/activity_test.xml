@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/playBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:text="播放"
+                />
+
+            <Button
+                android:id="@+id/downBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:text="下载"
+                />
+            <Button
+                android:id="@+id/downStopBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:text="停止下载"
+                />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:text="删除下载"
+                />
+
+            <Button
+                android:id="@+id/btn_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:text="下载界面"
+                />
+
+            <Button
+                android:id="@+id/btn_addDB"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:text="添加到数据库"
+                />
+            <Button
+                android:id="@+id/btn_selectDB"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:text="查询数据库"
+                />
+
+            <Button
+                android:id="@+id/btn_selectAllTable"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:text="查询所有表"
+                />
+
+            <android.media.ViviTV.player.widget.DolitVideoView
+                android:id="@+id/player"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="信息显示。。。。。。。信息显示。。。。。。。信息显示。。。。。。。信息显示。。。。。。。"
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

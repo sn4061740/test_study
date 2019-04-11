@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kevin:delegationadapter-extras:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/delegationadapter-extras-1.1.0.aar/7c1109cc88f2a96854b3fc7c5dcfc9e1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/delegationadapter-extras-1.1.0.aar/7c1109cc88f2a96854b3fc7c5dcfc9e1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kevin/delegationadapter-extras/1.1.0/763fd7983783e5739ad26181c1a9d36b4c6559aa/delegationadapter-extras-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

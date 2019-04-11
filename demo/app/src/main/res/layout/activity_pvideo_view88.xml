@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/playLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_black"
+    >
+    <include layout="@layout/video_controller"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"/>
+
+    <RelativeLayout
+        android:id="@+id/advLayout"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_marginTop="-216dp"
+        >
+        <android.media.ViviTV.player.widget.DolitVideoView
+            android:id="@+id/playerVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <com.xcore.ext.ImageViewExt
+            android:id="@+id/adv_conver"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:text="0"
+            android:textColor="@color/color_white"
+            android:background="@drawable/button_radius_20"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_5"
+            android:layout_marginTop="@dimen/_15"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:src="@drawable/back_left"
+            android:background="@drawable/button_radius_20"
+            android:layout_marginTop="@dimen/_15"
+            android:layout_marginLeft="@dimen/_10"
+            android:gravity="center"
+            android:padding="@dimen/_5"
+            />
+        <ImageView
+            android:id="@+id/volume_image"
+            android:layout_width="@dimen/_30dp"
+            android:layout_height="@dimen/_30dp"
+            android:src="@drawable/ic_volume_up_white_36dp"
+            android:background="@drawable/button_radius_20"
+            android:layout_marginTop="@dimen/_15"
+            android:layout_marginLeft="@dimen/_10"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/xRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/commentUIView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/layout_comment_ui_show"
+            />
+
+        <!--<include-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/commentInput"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/_150dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--layout="@layout/layout_comment_input"/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.xiaohaibin:XBanner:1.6.4@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/XBanner-1.6.4.aar/db928f755ce99524b8a895c1f2a635c4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/XBanner-1.6.4.aar/db928f755ce99524b8a895c1f2a635c4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/XBanner-1.6.4.aar/db928f755ce99524b8a895c1f2a635c4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.xiaohaibin/XBanner/1.6.4/f6eb052df7c2b0d98a2c31ab61ae5b995f2773b0/XBanner-1.6.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

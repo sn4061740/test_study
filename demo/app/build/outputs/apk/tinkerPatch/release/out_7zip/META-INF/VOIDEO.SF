@@ -1,0 +1,32 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: DtW6Uf3FGa223LLHPjmGCCczfhQ=
+SHA1-Digest-Manifest: L97pSZZvt00RtxOqm+AAAgGXIP4=
+Created-By: 1.8.0_152-release (JetBrains s.r.o)
+
+Name: assets/package_meta.txt
+SHA1-Digest: P4oP1SFAD+3ATlpqC+5y3n4eQWQ=
+
+Name: res/layout/layout_adapter_cache.xml
+SHA1-Digest: CU4AWR5RdJrVHiQwqM7XTHRzdjA=
+
+Name: res/layout/adapter_comment.xml
+SHA1-Digest: Rvz2Abg/gAExSqVk1e95BYRn5Fk=
+
+Name: resources.arsc
+SHA1-Digest: 7B2aZaECOP0QuhAOo09qzSnUnXA=
+
+Name: assets/only_use_to_test_tinker_resource.txt
+SHA1-Digest: 4LmW7LVvS3uEBefUZ25tbHXKme0=
+
+Name: classes.dex
+SHA1-Digest: Fl4i10gn4qAdx5QSJj0pzFRClhs=
+
+Name: assets/dex_meta.txt
+SHA1-Digest: ENA/8RMeC0Yr3YNNLRlWQjcAElM=
+
+Name: assets/res_meta.txt
+SHA1-Digest: pyK8zhUcjjOWKY8SxrXAIO5A+JY=
+
+Name: test.dex
+SHA1-Digest: 9jlJZZ+dKgQJh75auwJdN+fX1hg=
+

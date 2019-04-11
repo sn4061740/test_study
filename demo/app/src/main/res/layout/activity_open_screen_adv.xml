@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_transf"
+    >
+    <LinearLayout
+        android:id="@+id/play_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.media.ViviTV.player.widget.DolitVideoView
+            android:id="@+id/dolitView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <com.xcore.ext.ImageViewExt
+        android:id="@+id/screenImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="10"
+        android:textColor="@color/color_white"
+        android:background="@drawable/button_radius_20"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_10"
+        android:layout_marginTop="@dimen/_20"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/volume_image"
+        android:layout_width="@dimen/_40dp"
+        android:layout_height="@dimen/_40dp"
+        android:src="@drawable/ic_volume_up_white_36dp"
+        android:background="@drawable/button_radius_20"
+        android:layout_marginTop="@dimen/_20"
+        android:layout_marginLeft="@dimen/_10"
+        android:gravity="center"
+        android:padding="@dimen/_5"
+        />
+
+</RelativeLayout>

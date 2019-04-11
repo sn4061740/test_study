@@ -1,0 +1,2 @@
+# Referenced at D:\Documents\demo3\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:38
+-keep class com.xcore.MainApplication { <init>(); }

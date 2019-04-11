@@ -1,0 +1,2 @@
+Start diff between [app-release-0315-16-42-09/classes.dex] as old and [app-release/classes.dex] as new:
+classes.dex, oldSize=6031160, newSize=6201144, diffSize=187463

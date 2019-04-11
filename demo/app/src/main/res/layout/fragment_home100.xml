@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--搜索框-->
+        <LinearLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/black_1A"
+            >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_10"
+                android:gravity="center_vertical"
+                android:background="@color/black_1A"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                >
+
+                <TextView
+                    android:id="@+id/edit_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="请输入关键词查找片源"
+                    android:drawableLeft="@drawable/search_bg"
+                    android:textColor="@color/item_txt_color"
+                    android:background="@drawable/search_key_bg"
+                    android:paddingLeft="@dimen/_5"
+                    android:drawablePadding="@dimen/_10"
+                    android:textColorHint="@color/item_txt_color"
+                    android:gravity="center_vertical"
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/img_saomiao"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/saomiao"
+                android:layout_marginLeft="@dimen/_15"
+                android:layout_marginRight="@dimen/_10"
+                />
+            <ImageView
+                android:id="@+id/img_box"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chest_bg"
+                android:layout_marginLeft="@dimen/_10"
+                android:layout_marginRight="@dimen/_10"
+                />
+        </LinearLayout>
+
+        <!--内容-->
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:layout_below="@id/searchLayout"
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                >
+                <com.xcore.ui.other.XRecyclerView
+                    android:layout_weight="1"
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                </com.xcore.ui.other.XRecyclerView>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

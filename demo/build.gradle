@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath "com.tencent.tinker:tinker-patch-gradle-plugin:1.9.9"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven { url "https://jitpack.io" }
+    }
+}
+ext{
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.3"
+    minSdkVersion = 18
+    targetSdkVersion = 28
+    versionCode=56//第一个版本 51
+    versionName="1.4.1"
+    rPath="app-release-0407-15-25-36"//app-release-0118-18-49-01
+    tinkerEnabled=false
+}
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="修改登录密码"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/title_color"
+                android:textSize="15dp"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F1F1F1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/_10"
+            android:layout_marginLeft="@dimen/_10"
+            >
+
+            <EditText
+                android:id="@+id/edit_oldPass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40"
+                android:background="@drawable/edit_bg"
+                android:hint="请输入原始密码"
+                android:textSize="13dp"
+                android:textColor="@color/title_color"
+                android:textColorHint="@color/color_9c9c9c"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20"/>
+            <EditText
+                android:id="@+id/edit_newPass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40"
+                android:background="@drawable/edit_bg"
+                android:hint="请输入新密码"
+                android:textSize="13dp"
+                android:textColor="@color/title_color"
+                android:textColorHint="@color/color_9c9c9c"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20"/>
+            <EditText
+                android:id="@+id/edit_rePass"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40"
+                android:background="@drawable/edit_bg"
+                android:hint="请确认新密码"
+                android:textSize="13dp"
+                android:textColor="@color/title_color"
+                android:textColorHint="@color/color_9c9c9c"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F1F1F1"
+            />
+        <LinearLayout
+            android:id="@+id/btnLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/_10"
+            android:paddingRight="@dimen/_10"
+            >
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="取消"
+                android:background="@null"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/color_9c9c9c"
+                android:textSize="14dp"
+                />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="47dp"
+                android:background="#F1F1F1"
+                android:layout_gravity="bottom"
+                />
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="保存"
+                android:background="@null"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/title_color"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

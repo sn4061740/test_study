@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/_5"
+    >
+    <ImageView
+        android:id="@+id/selectImg"
+        android:layout_width="@dimen/_10"
+        android:layout_height="@dimen/_10"
+        android:src="@drawable/gou"
+        android:layout_marginRight="4dp"
+        android:visibility="visible"
+        />
+    <TextView
+        android:layout_below="@id/selectImg"
+        android:id="@+id/tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:text="一道本"
+        android:gravity="left|center_vertical"
+        android:textSize="13dp"
+        android:textColor="@color/title_color"
+        />
+
+</LinearLayout>

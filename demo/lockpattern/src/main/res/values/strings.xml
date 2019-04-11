@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">lockpattern</string>
+    <color name="grey_b2b2b2">#E3b263</color>
+    <color name="blue_78d2f6">#E3b263</color>
+    <color name="blue_01aaee">#E3b263</color>
+    <color name="blue_00aaee">#E3b263</color>
+    <color name="red_f3323b">#E3b263</color>
+
+    <color name="grey_a5a5a5">#A5A5A5</color>
+    <color name="grey_dde1e7">#DDE1E7</color>
+    <color name="red_f4333c">#F4333C</color>
+
+    <color name="color_transf">#80000000</color>
+
+    <!--手势密码-->
+    <string name="gesture_forget_gesture">忘记手势密码</string>
+    <string name="gesture_default">请输入手势密码</string>
+    <string name="gesture_error">手势密码输入错误</string>
+    <string name="gesture_correct">输入正确</string>
+
+    <!-- Create gesture activity -->
+    <string name="create_gesture_activity">CreateGestureActivity</string>
+    <string name="create_gesture_default">绘制解锁图案</string>
+    <string name="create_gesture_correct">再次绘制解锁图案</string>
+    <string name="create_gesture_less_error">至少连接4个点，请重新输入</string>
+    <string name="create_gesture_confirm_error">与上一次绘制不一致，请重新绘制</string>
+    <string name="create_gesture_confirm_correct">设置成功</string>
+    <string name="create_gesture_reset">重新设置</string>
+</resources>

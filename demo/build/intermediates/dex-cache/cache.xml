@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\Documents\demo\ijkplayer-java\build\intermediates\intermediate-jars\debug\classes.jar"
+        jumboMode="true"
+        min-sdk-version="18"
+        optimize="true"
+        revision="28.0.3"
+        sha1="4d697756fa455b57385496bc0b8ee1003b78e835">
+        <dex dex="D:\Documents\demo\app\build\intermediates\transforms\preDex\debug\65\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Documents\demo\glide37\build\intermediates\intermediate-jars\debug\classes.jar"
+        jumboMode="true"
+        min-sdk-version="18"
+        optimize="true"
+        revision="28.0.3"
+        sha1="4acaaaed40db419db16e33fe3ff0ed585d6ab8fd">
+        <dex dex="D:\Documents\demo\app\build\intermediates\transforms\preDex\debug\60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Documents\demo\CommonRecycler\build\intermediates\intermediate-jars\debug\classes.jar"
+        jumboMode="true"
+        min-sdk-version="18"
+        optimize="true"
+        revision="28.0.3"
+        sha1="a58c4a1be0d62e5432595d7df6774a47a6813714">
+        <dex dex="D:\Documents\demo\app\build\intermediates\transforms\preDex\debug\62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Documents\demo\baselibrary\build\intermediates\intermediate-jars\debug\classes.jar"
+        jumboMode="true"
+        min-sdk-version="18"
+        optimize="true"
+        revision="28.0.3"
+        sha1="8dd5ce9621cd41b138b601db094ace3f161eed6e">
+        <dex dex="D:\Documents\demo\app\build\intermediates\transforms\preDex\debug\64\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Documents\demo\lockpattern\build\intermediates\intermediate-jars\debug\classes.jar"
+        jumboMode="true"
+        min-sdk-version="18"
+        optimize="true"
+        revision="28.0.3"
+        sha1="960fe566bbe67032ca1e3dd53ef5ddd72dbef661">
+        <dex dex="D:\Documents\demo\app\build\intermediates\transforms\preDex\debug\61\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Documents\demo\app\libs\down.jar"
+        jumboMode="true"
+        min-sdk-version="18"
+        optimize="true"
+        revision="28.0.3"
+        sha1="197c116e68cd2dab7cbe2ec9cee2981ba1862377">
+        <dex dex="D:\Documents\demo\app\build\intermediates\transforms\preDex\debug\1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Documents\demo\libzxing\build\intermediates\intermediate-jars\debug\classes.jar"
+        jumboMode="true"
+        min-sdk-version="18"
+        optimize="true"
+        revision="28.0.3"
+        sha1="f26f17c30ace85d4714fad4063594611fe70c02d">
+        <dex dex="D:\Documents\demo\app\build\intermediates\transforms\preDex\debug\63\classes.dex" />
+    </item>
+
+</items>

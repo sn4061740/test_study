@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="温馨提示"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/color_white"
+                android:textSize="16dp"
+                android:background="@color/title_color"
+                />
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#F1F1F1"-->
+                <!--/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_9c9c9c"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:textSize="13dp"
+                android:lineSpacingExtra="2dp"
+                android:gravity="center_horizontal|center_vertical"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F1F1F1"
+            />
+
+        <LinearLayout
+            android:id="@+id/btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/_10"
+            android:paddingRight="@dimen/_10"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="我知道了"
+                android:textColor="@color/title_color"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/_10"
+            android:paddingRight="@dimen/_10"
+            >
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="取消"
+                android:background="@null"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/color_9c9c9c"
+                android:textSize="14dp"
+                />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#F1F1F1"
+                android:layout_gravity="center_vertical"
+                />
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:text="保存"
+                android:background="@null"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/title_color"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

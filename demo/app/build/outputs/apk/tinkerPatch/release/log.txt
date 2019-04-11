@@ -1,0 +1,62 @@
+-----------------------Tinker patch begin-----------------------
+configuration: 
+oldApk:D:\Documents\demo2\app\build\bakApk/app-release-0315-16-42-09.apk
+newApk:D:\Documents\demo2\app\build\outputs\apk\release\app-release.apk
+outputFolder:D:\Documents\demo2\app\build\outputs\apk/tinkerPatch/release
+isIgnoreWarning:false
+isProtectedApp:false
+7-ZipPath:7za
+useSignAPk:true
+package meta fields: 
+filed name:patchMessage, filed value:tinker is sample to use
+filed name:platform, filed value:all
+filed name:patchVersion, filed value:1.0
+dex configs: 
+dexMode: jar
+dexPattern:classes.*\.dex
+dexPattern:assets/secondary-dex-.\.jar
+dex loader:com.xcore.MainApplication
+dex loader:com.tencent.tinker.loader.*
+lib configs: 
+libPattern:libs/.*/.*\.so
+resource configs: 
+resPattern:res/.*
+resPattern:AndroidManifest\.xml
+resPattern:resources\.arsc
+resPattern:assets/.*
+resIgnore change:assets/sample_meta\.txt
+largeModSize:100kb
+useApplyResource:true
+
+Analyze old and new apk files:
+old apk: app-release-0315-16-42-09.apk, size=25555548, md5=a4119aa4c35f66d0c4905d48a2e376d3
+new apk: app-release.apk, size=25630888, md5=3659feeded23aa6830d8f299d2bf72d1
+
+Manifest has no changes, skip rest decode works.
+UnZipping apk to D:\Documents\demo2\app\build\outputs\apk\tinkerPatch\release\app-release-0315-16-42-09
+UnZipping apk to D:\Documents\demo2\app\build\outputs\apk\tinkerPatch\release\app-release
+Check for loader classes in dex: classes.dex
+Found modify resource: res/layout/adapter_comment.xml
+Found modify resource: res/layout/layout_adapter_cache.xml
+Found large modify resource: resources.arsc size:393996
+
+Gen classes.dex patch file:D:\Documents\demo2\app\build\outputs\apk\tinkerPatch\release\tinker_result\classes.dex, size:187463, md5:a12aa6b4c6beb734c1f9388ff94fce9d
+Verifying if patched new dex is logically the same as original new dex: app-release/classes.dex ...
+
+Gen classes.dex for dalvik full dex file:D:\Documents\demo2\app\build\outputs\apk\tinkerPatch\release\tempPatchedDexes\classes.dex, size:6220028, md5:fa103ddf2d12f6c5c9573e60a2c422ad
+DexDecoder:write meta file data: classes.dex,,fa103ddf2d12f6c5c9573e60a2c422ad,fa103ddf2d12f6c5c9573e60a2c422ad,a12aa6b4c6beb734c1f9388ff94fce9d,3273070149,1535364327,jar
+
+Add test install result dex: D:\Documents\demo2\app\build\outputs\apk\tinkerPatch\release\tinker_result\test.dex, size:584
+DexDecoder:write test dex meta file data: test.dex,,56900442eb5b7e1de45449d0685e6e00,56900442eb5b7e1de45449d0685e6e00,0,0,0,jar
+Add Test resource file: assets/only_use_to_test_tinker_resource.txt
+Final normal zip resource: resources_out.zip, size=5396436, md5=75bf994b5acf21e8799928c479630417
+Generate unsigned apk: patch_unsigned.apk
+Signing apk: patch_signed.apk
+Signing key algorithm is SHA1withRSA
+Try use 7za to compress the patch file: patch_signed_7zip.apk, will cost much more time
+Current 7za path:7za
+7a patch file failed, you should set the zipArtifact, or set the path directly
+Result: final signed patch result: D:\Documents\demo2\app\build\outputs\apk\tinkerPatch\release\patch_signed.apk, size=92492
+Tinker patch done, total time cost: 16.852000s
+Tinker patch done, you can go to file to find the output D:\Documents\demo2\app\build\outputs\apk/tinkerPatch/release
+-----------------------Tinker patch end-------------------------

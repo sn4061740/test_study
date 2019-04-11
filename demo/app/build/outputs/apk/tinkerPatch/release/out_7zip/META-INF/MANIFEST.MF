@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_152-release (JetBrains s.r.o)
+
+Name: assets/package_meta.txt
+SHA1-Digest: BoZjJZfBYUm/UJlrxDL1zj6gR+o=
+
+Name: res/layout/layout_adapter_cache.xml
+SHA1-Digest: 5T9P5VSVBASvgyZdaK2qaGTFX4M=
+
+Name: res/layout/adapter_comment.xml
+SHA1-Digest: 3yeTx3U7Kldz8eqCTCcabMUzsHc=
+
+Name: resources.arsc
+SHA1-Digest: fJWiIalyhibE6/LP7rz2Ku8aZQI=
+
+Name: assets/only_use_to_test_tinker_resource.txt
+SHA1-Digest: 0hDOMk1uWmkEPB3FP6r29AqdwR4=
+
+Name: classes.dex
+SHA1-Digest: F4cGPZoGBEknX+iUGVpRdaiu4MY=
+
+Name: assets/dex_meta.txt
+SHA1-Digest: S6KSYDALKffS4rU88O4jJrP+B5c=
+
+Name: assets/res_meta.txt
+SHA1-Digest: /a7+hOQYkZ6LBk0MepxYq56v6e8=
+
+Name: test.dex
+SHA1-Digest: JQ6I/qo62WRfO8A5LZy1vaQmpYE=
+
